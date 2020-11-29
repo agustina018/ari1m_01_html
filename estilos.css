@@ -1,0 +1,72 @@
+body{
+		text-align: center; 
+		margin:20px;
+		background-color: bisque;
+		display: block;
+	}
+		.h2{
+			text-decoration: underline;
+		}
+		#tabla1{
+			display:inline-block;
+			width:592px;
+			height:663.47px;
+			text-align: left;
+			border: 0px;
+			background-color: beige;
+		}
+		#div1{
+			text-decoration: underline;
+		}
+		#div2{
+			text-align: center;
+		}
+		#tabla11{
+			background-color:burlywood;
+			font-style: italic;
+			font-weight: bold;
+			color: white;
+			height:72.53px;
+		}
+		#tabla111{
+			width:65.9px;padding:6px;
+		}
+		#tabla112{
+			width:247px;padding:6px;
+		}
+		#tabla113{
+			width:245px;padding:6px;
+		}
+		#tabla121{
+			text-decoration: underline;
+			background:url('viento.jpg');
+			padding:6px; 
+			height:355px;
+		}
+		.tabla122{
+			padding:6px;
+		}
+		#tabla171{
+			text-decoration: underline;
+			background:url('cuerda.jpg');
+			padding:6px;
+			height:207px;
+		}
+		#div3{
+			margin-top:14px
+		}
+		#img{
+			width:402.53px; height:302.54px;
+		}
+		#div5{
+			text-align: center;
+		}
+		#tabla2{ display:inline-block;
+		 width:381px;
+		 text-align:left;
+		 padding:6px;
+		 border:0px;
+		}
+		.tabla2ol-ul{
+			font-style: italic;
+		}
