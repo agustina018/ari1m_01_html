@@ -1,5 +1,6 @@
 		<h2>Ejercicio 1</h2>
 		<h3>Se quiere construir un jardín de 1 m de ancho alrededor de una fuente circular de 4 m de diámetro. Si los paquetes de césped fuesen de 7 m2, ¿cuántos paquetes harían falta comprar para cubrir el jardín?</h3>
+		<img src="fuente.PNG">
 		<form>
 			Ancho del jardín
 			<input id="ancho" name="ancho" onkeyup="calcular()" value="1" />
@@ -15,13 +16,16 @@
 			ancho=document.getElementById("ancho").value;
 			d=document.getElementById("d").value;
 			areaancho=1*3.14*ancho;
-			aread=
-			document.getElementById('').innerHTML=;
+			aread=4*3.14*d;
+			paq=areaancho-aread;
+			paq=Math.round(paq*100)/100;
+			document.getElementById('paquetes').innerHTML= paq;
 			}calcular();
 		</script>
 
 		<h2>Ejercicio 2</h2>
 		<h3>Halla la apotema de un hexágono regular de 20 cm de lado.</h3>
+		<img src="rectangulo.PNG">
 		<form method="get">
 		Lado
 		<input id="L" name="L" placeholder="lado" value="20" onkeyup="calcular2()"/>
@@ -39,6 +43,7 @@
 			L=document.getElementById("L").value;
 			N=document.getElementById("N").value;
 			aptm=L/(2*Math.tan(Math.PI/N));
+			aptm=Math.round(aptm*100)/100;
 			document.getElementById('aptm').innerHTML= aptm+'cm';
 			}calcular2();
 		</script>
@@ -57,7 +62,7 @@
 		<input id ="num" name ="num" onkeyup="calcular3()" value="45"/>
 		Puntos
 		<input id ="puntos" name ="puntos" onkeyup="calcular3()" value="183"/>
-		<button>Respuestas</button>
+		<button>Calcular</button>
 		</form>
 		<div id="aciertos" style="
 		padding:20px;
@@ -81,6 +86,6 @@
 			document.getElementById('fallos').innerHTML= y;
 			}calcular3();
 		</script>
-		
+
 			
 			
