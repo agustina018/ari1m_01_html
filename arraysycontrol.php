@@ -1,27 +1,83 @@
+<h3>Crea un array con el nombre de tus compañeros, en qué puesto se sienta y selecciona uno de ellos al azar indicando su nombre y puesto:</h3>
+<br/>
 <?php
- // arrays
-$nombres = [
-	'1'=>'Andrei',
-	'2'=>'Fabian',
-	'3'=>'Héctor',
-	'4'=>'Gabi',
-	'5'=>'Nury',
-	'6'=>'Dani',
-	'7'=>'Macías',
-	'8'=>'Isma',
-	'9'=>'Jose',
-	'10'=>'Jesus Alfonso',
-	'11'=>'Sañudo',
-	'12'=>'Rodras',
-	'13'=>'Tresgo',
-	'14'=>'Luis',
-	'15'=>'Rule(Darius)',
-	'16'=>'Ivi',
-	'17'=>'Teje',
-	];
-	echo $nombres [rand(1,17)];
-	print_r($nombres);
+$compis = [
+	'1'=> 'Andrei',
+	'2'=> 'Fabi',
+	'3'=> 'Hector',
+	'4'=> 'Gabi',
+	'5'=> 'Nury',
+	'6'=> 'Agus',
+	'7'=> 'Daniel',
+	'8'=> 'Jesús',
+	'9'=> 'isma',
+	'10'=> 'Pepe',
+	'11'=> 'Fonso',
+	'12'=> 'Sañudo',
+	'13'=> 'Rodras',
+	'14'=> 'Alvaro',
+	'15'=> 'Darius',
+	'16'=> 'Ivan',
+	'17'=> 'Teje',
+];
+$i=rand(0,count($compis));
+$c=0;
+foreach($compis as $m=>$nombre){
+		$c++;
+
+		if($i==$c)
+			echo $m. '-'.$nombre.'<br/>';
+}
 ?>
+<div id="n"></div>
+<script>
+compis = [
+	'1 Andrei',
+	'2 Fabi',
+	'3 Hector',
+	'4 Gabi',
+	'5 Nury',
+	'6 Agus',
+	'8 Daniel',
+	'7 Jesús',
+	'9 Isma',
+	'10 Pepe',
+	'11 Fonso',
+	'12 Sañudo',
+	'13 Rodras',
+	'14 Alvaro',
+	'15 Darius',
+	'16 Ivan',
+	'17 Teje',
+]
+i=Math.random()*(compis.length -1);
+i=Math.round(i);
+console.log(i);
+document.getElementById('n').innerHTML =compis[i];
+</script>
+<h3>Almacena en un array la tabla de cuadrados perfectos y muestra el contenido del array:</h3>
+<br/>
+<pre>
+<?php
+//cuadrados perfectos
+$cuadrados=[];
+for ($i=0; $i <50 ; $i++) { 
+	$cuadrados[]=$i*$i;
+	# code...	
+} 
+print_r($cuadrados)
+?>
+</pre>
+<div id="num"></div>
+<script>
+tabla=[];
+for(i = 0;i<=50;i++){
+    tabla[i]=i*i;
+} console.log(tabla);
+for(i in tabla)
+document.getElementById('num').innerHTML =tabla;
+</script>
+
 <?php
 $semana = [
 	'lunes',
@@ -33,13 +89,32 @@ $semana = [
 	'domingo',
 ];
 //dias de la semana con la R
-	echo "Dias de la semana con la R:<br>";
+	echo "<h3>Dias de la semana con la R:<br></h3>";
 	foreach ($semana as $c){
 	if(strpos($c,"r")){
 		echo "$c <br>";
 	}
 }
 ?>
+<h3>Muestra el listado ordenado de días de la semana que contengan la letra R:</h3>
+<div id="se"></div>
+<script>
+	semana = [
+		'lunes',
+		'martes',
+		'miercoles',
+		'jueves',
+		'viernes',
+		'sabado',
+		'domingo',
+		];
+		
+for (i = 0; i < semana.length ; i++) {
+	n = semana[i].indexOf("r");
+	if (n > 0){
+		document.getElementById('se').innerHTML += semana[i]+ "<br>";
+	}}
+</script>
 
 
 
