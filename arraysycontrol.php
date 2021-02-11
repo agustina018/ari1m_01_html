@@ -1,3 +1,4 @@
+<h2>Ejercicio 1</h2>
 <h3>Crea un array con el nombre de tus compañeros, en qué puesto se sienta y selecciona uno de ellos al azar indicando su nombre y puesto:</h3>
 <br/>
 <?php
@@ -55,6 +56,7 @@ i=Math.round(i);
 console.log(i);
 document.getElementById('n').innerHTML =compis[i];
 </script>
+<h2>Ejercicio 2</h2>
 <h3>Almacena en un array la tabla de cuadrados perfectos y muestra el contenido del array:</h3>
 <br/>
 <pre>
@@ -77,25 +79,7 @@ for(i = 0;i<=50;i++){
 for(i in tabla)
 document.getElementById('num').innerHTML =tabla;
 </script>
-
-<?php
-$semana = [
-	'lunes',
-	'martes',
-	'miercoles',
-	'jueves',
-	'viernes',
-	'sabado',
-	'domingo',
-];
-//dias de la semana con la R
-	echo "<h3>Dias de la semana con la R:<br></h3>";
-	foreach ($semana as $c){
-	if(strpos($c,"r")){
-		echo "$c <br>";
-	}
-}
-?>
+<h2>Ejercicio 3</h2>
 <h3>Muestra el listado ordenado de días de la semana que contengan la letra R:</h3>
 <div id="se"></div>
 <script>
@@ -114,7 +98,26 @@ for (i = 0; i < semana.length ; i++) {
 	if (n > 0){
 		document.getElementById('se').innerHTML += semana[i]+ "<br>";
 	}}
-</script>
+</script></br>
+<?php
+$semana = [
+	'lunes',
+	'martes',
+	'miercoles',
+	'jueves',
+	'viernes',
+	'sabado',
+	'domingo',
+];
+//dias de la semana con la R
+	
+	foreach ($semana as $c){
+	if(strpos($c,"r")){
+		echo "$c <br>";
+	}
+}
+?>
+
 
 
 
