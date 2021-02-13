@@ -1,3 +1,6 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+</head>
 <h2>Ejercicio 1</h2>
 <h3>Crea un array con el nombre de tus compañeros, en qué puesto se sienta y selecciona uno de ellos al azar indicando su nombre y puesto:</h3>
 <br/>
